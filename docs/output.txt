@@ -1,0 +1,87 @@
+====================================================================================
+SETUP
+====================================================================================
+  Model    : llama3.2:3b via ChatOllama (local)
+  Chain    : PromptTemplate | ChatOllama | JsonOutputParser -> Pydantic -> grounding
+  Retry    : on (one repair pass)
+
+====================================================================================
+LOADING THE BATCH
+====================================================================================
+  6 documents loaded
+
+    ai_trends_2025.txt                   txt     940 chars
+    climate_agriculture.html             html    704 chars  hints: {'title': 'Climate Change and Agriculture', 'author': 'John Smith', 'date': '2024-09-15'}
+    ocr_scan_notes.txt                   txt     634 chars
+    press_release_undated.txt            txt     512 chars
+    product_memo.md                      md      740 chars
+    vendor_security_assessment.docx      docx    952 chars
+
+====================================================================================
+EXTRACTING
+====================================================================================
+
+  [valid  ] ai_trends_2025.txt
+      title            : AI Trends 2025
+      author           : Dr. Sarah Lee
+      publication_date : 2025-05-01
+      keywords         : ai, trends, artificial intelligence, machine learning, deep learning, data quality, evaluation, retrieval-augmented generation, ethics, ai act
+      document_type    : report
+
+  [valid  ] climate_agriculture.html
+      title            : Climate Change and Agriculture
+      author           : John Smith
+      publication_date : 2024-09-15
+      keywords         : climate change, agriculture, sustainable farming, drought-resistant, no-till, policy gaps
+      document_type    : article
+      ! author recovered from HTML meta tag: 'John Smith'
+
+  [valid  ] ocr_scan_notes.txt
+      title            : QUARTERLY SAFETY REVIEW -- INTERNAL
+      author           : None
+      publication_date : 2024-09-15
+      keywords         : safety review, incident summary, corrective actions, outstanding, site management review
+      document_type    : memo
+
+  [valid  ] press_release_undated.txt
+      title            : FOR IMMEDIATE RELEASE Northwind Logistics Opens Automated Sorting Facility
+      author           : None
+      publication_date : None
+      keywords         : automated sorting facility, northwind logistics, lyon, parcel sorting, computer vision, autonomous floor robots
+      document_type    : press_release
+
+  [valid  ] product_memo.md
+      title            : Internal Memo: Search Relevance Regression
+      author           : Priya Raman, Search Platform
+      publication_date : None
+      keywords         : search, ranking, relevance, regression, machine learning
+      document_type    : memo
+      ! publication_date '2023-04-01' does not appear in the source — dropped as unverified
+
+  [valid  ] vendor_security_assessment.docx
+      title            : Vendor Security Assessment: CloudVault
+      author           : Miguel Torres, Security Architect
+      publication_date : 2025-02-18
+      keywords         : cloudvault, security assessment, vendor evaluation, encryption, access control, tenant isolation, incident history
+      document_type    : assessment
+
+====================================================================================
+EXPORT
+====================================================================================
+  output/metadata.json   6 rows
+  output/metadata.csv    6 rows
+  output/rejected.json   0 rows
+
+====================================================================================
+SUMMARY
+====================================================================================
+  documents processed : 6
+  valid               : 6
+    of which repaired : 0
+  rejected            : 0
+  with no author      : 2
+  with no date        : 2
+
+====================================================================================
+Done.
+====================================================================================

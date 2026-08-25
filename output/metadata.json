@@ -1,0 +1,101 @@
+[
+  {
+    "source_file": "ai_trends_2025.txt",
+    "format": "txt",
+    "title": "AI Trends 2025",
+    "author": "Dr. Sarah Lee",
+    "publication_date": "2025-05-01",
+    "keywords": [
+      "ai",
+      "trends",
+      "artificial intelligence",
+      "machine learning",
+      "deep learning",
+      "data quality",
+      "evaluation",
+      "retrieval-augmented generation",
+      "ethics",
+      "ai act"
+    ],
+    "document_type": "report"
+  },
+  {
+    "source_file": "climate_agriculture.html",
+    "format": "html",
+    "title": "Climate Change and Agriculture",
+    "author": "John Smith",
+    "publication_date": "2024-09-15",
+    "keywords": [
+      "climate change",
+      "agriculture",
+      "sustainable farming",
+      "drought-resistant",
+      "no-till",
+      "policy gaps"
+    ],
+    "document_type": "article"
+  },
+  {
+    "source_file": "ocr_scan_notes.txt",
+    "format": "txt",
+    "title": "QUARTERLY SAFETY REVIEW -- INTERNAL",
+    "author": null,
+    "publication_date": "2024-09-15",
+    "keywords": [
+      "safety review",
+      "incident summary",
+      "corrective actions",
+      "outstanding",
+      "site management review"
+    ],
+    "document_type": "memo"
+  },
+  {
+    "source_file": "press_release_undated.txt",
+    "format": "txt",
+    "title": "FOR IMMEDIATE RELEASE Northwind Logistics Opens Automated Sorting Facility",
+    "author": null,
+    "publication_date": null,
+    "keywords": [
+      "automated sorting facility",
+      "northwind logistics",
+      "lyon",
+      "parcel sorting",
+      "computer vision",
+      "autonomous floor robots"
+    ],
+    "document_type": "press_release"
+  },
+  {
+    "source_file": "product_memo.md",
+    "format": "md",
+    "title": "Internal Memo: Search Relevance Regression",
+    "author": "Priya Raman, Search Platform",
+    "publication_date": null,
+    "keywords": [
+      "search",
+      "ranking",
+      "relevance",
+      "regression",
+      "machine learning"
+    ],
+    "document_type": "memo"
+  },
+  {
+    "source_file": "vendor_security_assessment.docx",
+    "format": "docx",
+    "title": "Vendor Security Assessment: CloudVault",
+    "author": "Miguel Torres, Security Architect",
+    "publication_date": "2025-02-18",
+    "keywords": [
+      "cloudvault",
+      "security assessment",
+      "vendor evaluation",
+      "encryption",
+      "access control",
+      "tenant isolation",
+      "incident history"
+    ],
+    "document_type": "assessment"
+  }
+]

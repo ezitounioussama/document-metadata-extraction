@@ -1,0 +1,19 @@
+AI Trends 2025
+A Technical Report
+
+Prepared by Dr. Sarah Lee
+Published 2025-05-01
+Institute for Applied Machine Learning
+
+This report surveys the state of artificial intelligence as of early 2025. It covers the
+continued scaling of large language models, the shift toward smaller specialised models that
+run on local hardware, and the growing regulatory attention on transparency.
+
+Three themes recur throughout. First, deep learning architectures have stabilised while the
+competitive frontier has moved to data quality and evaluation. Second, retrieval-augmented
+generation has become the default pattern for grounding model output in verifiable sources.
+Third, ethics in AI has moved from an academic concern to a compliance requirement, driven by
+the EU AI Act and comparable legislation elsewhere.
+
+The report concludes that organisations adopting AI in 2025 should invest less in model
+selection and more in evaluation infrastructure.

@@ -1,0 +1,12 @@
+FOR IMMEDIATE RELEASE
+
+Northwind Logistics Opens Automated Sorting Facility
+
+Northwind Logistics today announced the opening of its automated parcel sorting facility on
+the outskirts of Lyon. The site processes up to 40,000 parcels an hour and is the company's
+first fully automated hub in France.
+
+The facility uses computer vision for label reading and a fleet of autonomous floor robots for
+routing. Northwind says the site will cut average delivery times in the region by a day.
+
+Media contact: press office.
