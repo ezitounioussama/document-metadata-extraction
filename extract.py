@@ -26,13 +26,13 @@ from grounding import recover_from_hints, verify
 from loaders import load_batch
 from schema import DOCUMENT_TYPES, DocumentMetadata, ExtractionResult
 
-MODEL = "llama3.2:3b"
+MODEL = "qwen3:8b"
 DATA_DIR = Path("data")
 OUT_DIR = Path("output")
 
 # temperature=0: extraction is not creative, and a rerun should give the same
 # dataset. Anything above 0 makes the output non-reproducible for no benefit.
-model = ChatOllama(model=MODEL, temperature=0.0, num_predict=400)
+model = ChatOllama(model=MODEL, reasoning=False, temperature=0.0, num_predict=400)
 
 parser = JsonOutputParser(pydantic_object=DocumentMetadata)
 

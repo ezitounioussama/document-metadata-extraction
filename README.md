@@ -4,6 +4,10 @@ Turn a folder of unstructured documents — txt, md, html, docx — into a valid
 dataset. Six documents in, six rows out, with every non-null value verified against the source it
 came from.
 
+Re-run on `qwen3:8b` (it was built on `llama3.2:3b`), the dataset is the same except two rows read
+better: the memo's author comes back as the bare `Priya Raman` rather than `Priya Raman, Search
+Platform`, and the OCR document is classified `report` instead of `memo`.
+
 The verification is there because of what happened without it. `JsonOutputParser` looks like it
 validates when you pass it `pydantic_object=...`, and it does not: it returns a plain dict and
 will happily hand back `{"title": 123, "keywords": "not-a-list"}`. Adding real Pydantic validation
@@ -13,9 +17,9 @@ perfectly valid ISO date, so the schema accepted it. Shape and truth are differe
 anything that isn't there. The nulls in the output are correct answers.
 
 ```bash
-ollama serve && ollama pull llama3.2:3b
-python3 -m venv .venv
-.venv/bin/python -m pip install langchain-core langchain-ollama pydantic
+ollama serve && ollama pull qwen3:8b
+uv venv
+uv pip install langchain-core langchain-ollama pydantic
 
 .venv/bin/python extract.py       # run the pipeline on data/
 .venv/bin/python tests.py         # 24 tests, no model needed

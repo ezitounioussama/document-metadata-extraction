@@ -1,7 +1,7 @@
 source_file,format,title,author,publication_date,keywords,document_type
-ai_trends_2025.txt,txt,AI Trends 2025,Dr. Sarah Lee,2025-05-01,ai; trends; artificial intelligence; machine learning; deep learning; data quality; evaluation; retrieval-augmented generation; ethics; ai act,report
-climate_agriculture.html,html,Climate Change and Agriculture,John Smith,2024-09-15,climate change; agriculture; sustainable farming; drought-resistant; no-till; policy gaps,article
-ocr_scan_notes.txt,txt,QUARTERLY SAFETY REVIEW -- INTERNAL,,2024-09-15,safety review; incident summary; corrective actions; outstanding; site management review,memo
-press_release_undated.txt,txt,FOR IMMEDIATE RELEASE Northwind Logistics Opens Automated Sorting Facility,,,automated sorting facility; northwind logistics; lyon; parcel sorting; computer vision; autonomous floor robots,press_release
-product_memo.md,md,Internal Memo: Search Relevance Regression,"Priya Raman, Search Platform",,search; ranking; relevance; regression; machine learning,memo
-vendor_security_assessment.docx,docx,Vendor Security Assessment: CloudVault,"Miguel Torres, Security Architect",2025-02-18,cloudvault; security assessment; vendor evaluation; encryption; access control; tenant isolation; incident history,assessment
+ai_trends_2025.txt,txt,AI Trends 2025,Dr. Sarah Lee,2025-05-01,artificial intelligence; large language models; regulatory compliance; deep learning; ai ethics; evaluation infrastructure,report
+climate_agriculture.html,html,Climate Change and Agriculture,John Smith,2024-09-15,climate change; agriculture; sustainable farming; drought resistance; policy; subsidies,article
+ocr_scan_notes.txt,txt,QUARTERLY SAFETY REVIEW  --  INTERNAL,,2024-09-15,safety; incident; contractor; chemical spill; forklift; review,report
+press_release_undated.txt,txt,Northwind Logistics Opens Automated Sorting Facility,,,logistics; automated sorting; parcel delivery; robotics; delivery times,press_release
+product_memo.md,md,Internal Memo: Search Relevance Regression,Priya Raman,,search; ranking; relevance; regression; machine learning,memo
+vendor_security_assessment.docx,docx,Vendor Security Assessment: CloudVault,"Miguel Torres, Security Architect",2025-02-18,cloud storage; security assessment; encryption; access control; tenant isolation; data retention; vendor review,assessment

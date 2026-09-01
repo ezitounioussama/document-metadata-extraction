@@ -6,16 +6,12 @@
     "author": "Dr. Sarah Lee",
     "publication_date": "2025-05-01",
     "keywords": [
-      "ai",
-      "trends",
       "artificial intelligence",
-      "machine learning",
+      "large language models",
+      "regulatory compliance",
       "deep learning",
-      "data quality",
-      "evaluation",
-      "retrieval-augmented generation",
-      "ethics",
-      "ai act"
+      "ai ethics",
+      "evaluation infrastructure"
     ],
     "document_type": "report"
   },
@@ -29,40 +25,40 @@
       "climate change",
       "agriculture",
       "sustainable farming",
-      "drought-resistant",
-      "no-till",
-      "policy gaps"
+      "drought resistance",
+      "policy",
+      "subsidies"
     ],
     "document_type": "article"
   },
   {
     "source_file": "ocr_scan_notes.txt",
     "format": "txt",
-    "title": "QUARTERLY SAFETY REVIEW -- INTERNAL",
+    "title": "QUARTERLY SAFETY REVIEW  --  INTERNAL",
     "author": null,
     "publication_date": "2024-09-15",
     "keywords": [
-      "safety review",
-      "incident summary",
-      "corrective actions",
-      "outstanding",
-      "site management review"
+      "safety",
+      "incident",
+      "contractor",
+      "chemical spill",
+      "forklift",
+      "review"
     ],
-    "document_type": "memo"
+    "document_type": "report"
   },
   {
     "source_file": "press_release_undated.txt",
     "format": "txt",
-    "title": "FOR IMMEDIATE RELEASE Northwind Logistics Opens Automated Sorting Facility",
+    "title": "Northwind Logistics Opens Automated Sorting Facility",
     "author": null,
     "publication_date": null,
     "keywords": [
-      "automated sorting facility",
-      "northwind logistics",
-      "lyon",
-      "parcel sorting",
-      "computer vision",
-      "autonomous floor robots"
+      "logistics",
+      "automated sorting",
+      "parcel delivery",
+      "robotics",
+      "delivery times"
     ],
     "document_type": "press_release"
   },
@@ -70,7 +66,7 @@
     "source_file": "product_memo.md",
     "format": "md",
     "title": "Internal Memo: Search Relevance Regression",
-    "author": "Priya Raman, Search Platform",
+    "author": "Priya Raman",
     "publication_date": null,
     "keywords": [
       "search",
@@ -88,13 +84,13 @@
     "author": "Miguel Torres, Security Architect",
     "publication_date": "2025-02-18",
     "keywords": [
-      "cloudvault",
+      "cloud storage",
       "security assessment",
-      "vendor evaluation",
       "encryption",
       "access control",
       "tenant isolation",
-      "incident history"
+      "data retention",
+      "vendor review"
     ],
     "document_type": "assessment"
   }
