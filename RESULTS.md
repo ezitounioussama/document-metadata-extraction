@@ -1,6 +1,6 @@
 # Results — Structured Metadata from a Batch of Documents
 
-Captured from a real run. `llama3.2:3b` via `ChatOllama`, local Ollama, `temperature=0`.
+Captured from a real run. `qwen3:8b` via `ChatOllama(reasoning=False)`, local Ollama, `temperature=0`.
 Raw log: [`docs/output.txt`](docs/output.txt) · Dataset: [`output/`](output/)
 
 ```bash
@@ -36,9 +36,9 @@ All six rows validated. `output/metadata.csv`:
 |---|---|---|---|---|
 | ai_trends_2025.txt | AI Trends 2025 | Dr. Sarah Lee | 2025-05-01 | report |
 | climate_agriculture.html | Climate Change and Agriculture | John Smith | 2024-09-15 | article |
-| ocr_scan_notes.txt | QUARTERLY SAFETY REVIEW -- INTERNAL | *(null)* | 2024-09-15 | memo |
-| press_release_undated.txt | FOR IMMEDIATE RELEASE Northwind Logistics Opens… | *(null)* | *(null)* | press_release |
-| product_memo.md | Internal Memo: Search Relevance Regression | Priya Raman, Search Platform | *(null)* | memo |
+| ocr_scan_notes.txt | QUARTERLY SAFETY REVIEW -- INTERNAL | *(null)* | 2024-09-15 | report |
+| press_release_undated.txt | Northwind Logistics Opens Automated Sorting Facility | *(null)* | *(null)* | press_release |
+| product_memo.md | Internal Memo: Search Relevance Regression | Priya Raman | *(null)* | memo |
 | vendor_security_assessment.docx | Vendor Security Assessment: CloudVault | Miguel Torres, Security Architect | 2025-02-18 | assessment |
 
 One JSON record:
@@ -134,9 +134,11 @@ generates every plausible written form of the same day before deciding:
 | `published 15 September 2024` | `2024-09-15` | **kept** |
 | no date anywhere | `2023-04-01` | **dropped** — invented |
 
-Authors are matched on a name token rather than the whole string, because the model returns
+Authors are matched on a name token rather than the whole string, because a model may return
 `"Priya Raman, Search Platform"` where the document says `Priya Raman` — an exact match would
-reject a correct answer.
+reject a correct answer. (`llama3.2:3b` did exactly that; `qwen3:8b` returns the bare name, and
+still returns `"Miguel Torres, Security Architect"` for the docx, so the token match is still
+what keeps that row.)
 
 ---
 
